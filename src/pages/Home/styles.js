@@ -19,7 +19,7 @@ export const Search = styled.section`
 `;
 
 export const Logo = styled.img`
-  margin: 15px;
+  margin-bottom: 15px;
 `;
 
 export const Title = styled(Text)`
