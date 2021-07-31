@@ -23,6 +23,11 @@ export const Logo = styled.img`
 `;
 
 export const Title = styled(Text)`
+  font-family: ${(props) => props.theme.fonts.regular};
+  color: ${(props) => props.theme.color.text};
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
   margin: 16px 0;
 `;
 

@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 import React, { useState } from 'react';
+import Slider from 'react-slick'
 import { useSelector } from 'react-redux';
 import TextField, { Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
@@ -14,6 +15,7 @@ import {
   ImageSkeleton as Skeleton,
 } from '../../components';
 import logo from '../../assets/logo.svg';
+import restaurante from '../../assets/restaurante-fake.png';
 import { Container, Search, Logo, Title, Carousel, Wrapper } from './styles';
 
 const Home = () => {

@@ -11,7 +11,7 @@ var _reactSlick = _interopRequireDefault(require("react-slick"));
 
 var _components = require("../../components");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject6() {
   var data = _taggedTemplateLiteral(["\n  display: flex;\n"]);
@@ -34,7 +34,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  margin: 16px 0;\n"]);
+  var data = _taggedTemplateLiteral(["\n  font-family: ", ";\n  color: ", ";\n  font-size: 24px;\n  font-weight: bold;\n  line-height: 29px;\n  margin: 16px 0;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -75,25 +75,29 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents["default"].aside(_templateObject(), function (_ref) {
+var Container = _styledComponents.default.aside(_templateObject(), function (_ref) {
   var colors = _ref.theme.colors;
   return colors.background;
 });
 
 exports.Container = Container;
 
-var Search = _styledComponents["default"].section(_templateObject2());
+var Search = _styledComponents.default.section(_templateObject2());
 
 exports.Search = Search;
 
-var Logo = _styledComponents["default"].img(_templateObject3());
+var Logo = _styledComponents.default.img(_templateObject3());
 
 exports.Logo = Logo;
-var Title = (0, _styledComponents["default"])(_components.Text)(_templateObject4());
+var Title = (0, _styledComponents.default)(_components.Text)(_templateObject4(), function (props) {
+  return props.theme.fonts.regular;
+}, function (props) {
+  return props.theme.color.text;
+});
 exports.Title = Title;
-var Carousel = (0, _styledComponents["default"])(_reactSlick["default"])(_templateObject5());
+var Carousel = (0, _styledComponents.default)(_reactSlick.default)(_templateObject5());
 exports.Carousel = Carousel;
 
-var Wrapper = _styledComponents["default"].div(_templateObject6());
+var Wrapper = _styledComponents.default.div(_templateObject6());
 
 exports.Wrapper = Wrapper;
